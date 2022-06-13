@@ -14,7 +14,12 @@ const Admin = () => {
         // console.log(e.target.name, e.target.value)
         let name = e.target.name;
         let value = e.target.value;
-    }
+
+        // product[name] = value;
+        let copy = {...product};
+        copy[name] = value;
+        setProduct(copy);
+    };
 
     return(
         <div className="admin-page">
@@ -26,22 +31,22 @@ const Admin = () => {
 
                     <div className="field">
                         <label>Title</label>
-                        <input name="title" onChange={textChanged} class="form-control" type="text" />
+                        <input name="title" onChange={textChanged} className="form-control" type="text" />
                     </div>
 
                     <div className="field">
                         <label>Category</label>
-                        <input name="category" onChange={textChanged} class="form-control"  type="text" />
+                        <input name="category" onChange={textChanged} className="form-control"  type="text" />
                     </div>
 
                     <div className="field">
                         <label>Image</label>
-                        <input class="form-control"  type="text" placeholder="image name" />
+                        <input className="form-control"  type="text" placeholder="image name" />
                     </div>
 
                     <div className="field">
                         <label>Price</label>
-                        <input class="form-control"  type="text" />
+                        <input className="form-control"  type="text" />
                     </div>
 
                     <div className="field">
