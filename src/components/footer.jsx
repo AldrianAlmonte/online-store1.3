@@ -4,7 +4,7 @@ function Footer(){
     return (
 
         <div className="footer">
-            <h2>test</h2>
+            <h2>© 1994 CrazyStore, Inc</h2>
         </div> 
     );
 }

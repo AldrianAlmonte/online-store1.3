@@ -9,10 +9,10 @@ function Navbar() {
   return (
     //in JSX you will use className for CSS
 
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            Navbar
+            CrazyStore
           </Link>
           <button
             className="navbar-toggler"
@@ -37,6 +37,16 @@ function Navbar() {
               <li className="nav-item">
                 <Link className="nav-link" to="/about">
                   About Us
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/admin">
+                  Admin
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/cart">
+                  Cart
                 </Link>
               </li>
             </ul>
